@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+      <form action="index.html" method="post">
+        <h1>Destiny 2 Class</h1>
+        
+        <fieldset>
+          <legend><span class="number">1 </span> Basic Information</legend>
+          
+          <label for="name">Username: </label>
+          <input type="text" id="name" name="user_name">
+          <label for="email">Email: </label>
+          <input type="email" id="mail" name="user_email">
+          
+          <label>Main Class: </label>
+          <input type="radio" id="titan" value="titan" name="class"><label for="titan_class" class="light">Titan</label>
+          <br>
+          <input type="radio" id="warlock" value="warlock" name="class"><label for="warlock_class" class="light">Warlock</label>
+          <br>
+          <input type="radio" id="hunter" value="hunter" name="class"><label for="hunter_class" class="light">Hunter</label>
+        </fieldset>
+        
+        <fieldset>
+          <legend><span class="number">2</span> More about you</legend>
+
+          <label for="bio">Description: </label>
+          <textarea id="bio" name="user_bio"></textarea>
+          
+          <label for="states">State</label>
+          <select id="states" name="user_state">
+            <option value="state0">New Jersey</option>
+            <option value="state1">New York</option>
+            <option value="state2">Delaware</option>
+            <option value="state3">Texas</option>
+            <option value="state4">Georgia</option>
+          </select>
+          
+          <label>Gameplay:</label>
+          <input type="checkbox" id="raid" value="raid" name="user_interest"><label class="light" for="raid">Raid</label><br>
+          <input type="checkbox" id="strikes" value="strikes" name="user_interest"><label class="light" for="strikes">Strikes</label><br>
+          <input type="checkbox" id="trials" value="trials" name="user_interest"><label class="light" for="trials">Trials</label><br>
+          <input type="checkbox" id="competitve" value="competitive" name="user_interest"><label class="light" for="comp">Competitive</label><br>
+          <input type="checkbox" id="gambit" value="gambit" name="user_interest"><label class="light" for="gambit">Gambit</label><br>
+
+
+        </fieldset>
+        <button type="submit">Send</button>
+      </form>
+      
+    </body>
+</html>
